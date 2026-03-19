@@ -15,3 +15,15 @@
 
 - [FreeMcServer](https://freemcserver.net) 等免费服务器平台（需要保持玩家在线才能续期）
 - 配合 **Renew 脚本**使用，定时触发构建，让你的服务器持续保活，永不掉线 🟢
+
+## ⚙️ Secret 变量格式
+
+在 **Settings → Secrets and variables → Actions** 添加以下 2 个 Secret：
+
+**`PRIVATE_REPO_TOKEN`** — 访问私库的 PAT（需勾选 `repo` 权限）
+
+**`CONFIG`** — 填入以下 JSON 格式：
+
+```json
+{"TOK":"","ARGO_DOMAIN":"","TG":"","SUB_URL":"","NEZHA_SERVER":"","NEZHA_KEY":"","NEZHA_PORT":"","NEZHA_TLS":"1","AGENT_UUID":"","TUNNEL_PROXY":"","TMP_ARGO":"vls","VL_PORT":"9010","VM_PORT":"8001","CF_IP":"","SUB_NAME":"","second_port":"","UUID":"","SERVER_PORT":"","SNI":""}
+```
